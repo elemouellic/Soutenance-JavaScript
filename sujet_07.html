@@ -96,7 +96,7 @@
             let min = parseInt(document.getElementById("borne-inf").value);
             let max = parseInt(document.getElementById("borne-sup").value);
             // Condition pour tester si c'est un nombre et si inférieur à 999, sinon appel de la fonction
-            if (isNaN(n && min && max)) {
+            if (isNaN(n || min || max)) {
                 return alert("Merci d'entrer un nombre")
             } else if (n > 999) {
                 return alert("Merci d'entrer un nombre entre 1 et 999")
